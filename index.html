@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raízes do Futebol: vitrine informativa de projetos sociais de futebol.">
+  <title>Raízes do Futebol | Oportunidades começam na comunidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Raízes do Futebol - início"><span class="brand-mark">RF</span><span>RAÍZES <b>DO FUTEBOL</b></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#avaliacoes">Avaliações</a><a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">ESPORTE • INCLUSÃO • COMUNIDADE</p>
+        <h1>O talento nasce<br><span>em todo lugar.</span></h1>
+        <p class="hero-copy">Uma vitrine informativa para dar visibilidade aos projetos sociais de futebol e às oportunidades de desenvolvimento de crianças e adolescentes.</p>
+        <a class="button primary" href="#projetos">Conheça os projetos <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustração de campo de futebol" role="img">
+        <div class="sun"></div><div class="field"><div class="field-line"></div><div class="center-circle"></div><div class="goal"></div></div>
+        <div class="ball">⚽</div><div class="art-caption">RAÍZES FORTES.<br>FUTURO ABERTO.</div>
+      </div>
+    </section>
+
+    <section class="intro section" id="sobre">
+      <div><p class="eyebrow dark">NOSSA MISSÃO</p><h2>Mais que futebol.<br><span>Desenvolvimento para a vida.</span></h2></div>
+      <div class="intro-text"><p>O Raízes do Futebol é um protótipo de aplicação web criado para organizar e apresentar informações sobre projetos sociais esportivos. A proposta valoriza o esporte como espaço de convivência, saúde, disciplina e inclusão.</p><p class="note">Os projetos exibidos nesta versão são exemplos demonstrativos, criados para testar a interface. Não representam organizações verificadas nem vagas reais.</p></div>
+    </section>
+
+    <section class="projects section" id="projetos">
+      <div class="section-heading"><div><p class="eyebrow dark">MAPEAMENTO COMUNITÁRIO</p><h2>Projetos em destaque</h2></div><p>Use os filtros para explorar os exemplos cadastrados.</p></div>
+      <div class="filters">
+        <label>Buscar por nome ou região<input type="search" id="searchInput" placeholder="Ex.: Zona Leste" /></label>
+        <label>Faixa etária<select id="ageFilter"><option value="">Todas as idades</option><option value="sub13">Até 13 anos</option><option value="sub15">Até 15 anos</option><option value="sub17">Até 17 anos</option></select></label>
+      </div>
+      <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>Nenhum projeto encontrado. Tente alterar os filtros.</p>
+    </section>
+
+    <section class="evaluation section" id="avaliacoes">
+      <div class="evaluation-copy"><p class="eyebrow">CAMINHOS DO ESPORTE</p><h2>Preparação para avaliações esportivas</h2><p>As avaliações esportivas podem observar fundamentos técnicos, compreensão tática, atitude, assiduidade e trabalho em equipe. A participação em um projeto não garante aprovação ou contratação por clubes.</p><a class="button light" href="#contato">Como usar a plataforma <span aria-hidden="true">→</span></a></div>
+      <div class="steps">
+        <article><span>01</span><div><h3>Preparação</h3><p>Treinar fundamentos e manter hábitos saudáveis.</p></div></article>
+        <article><span>02</span><div><h3>Informação responsável</h3><p>Confirmar datas e critérios diretamente com organizações oficiais.</p></div></article>
+        <article><span>03</span><div><h3>Acompanhamento</h3><p>Valorizar o desenvolvimento, a educação e o bem-estar dos jovens.</p></div></article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contato">
+      <div><p class="eyebrow dark">PARTICIPE</p><h2>Quer divulgar um projeto?</h2><p>Este protótipo demonstra como informações de iniciativas comunitárias podem ser organizadas em um único lugar.</p></div>
+      <form id="contactForm">
+        <label>Seu nome<input type="text" id="name" required placeholder="Digite seu nome"></label>
+        <label>E-mail<input type="email" id="email" required placeholder="voce@exemplo.com"></label>
+        <label>Mensagem<textarea id="message" rows="3" required placeholder="Conte sobre o projeto"></textarea></label>
+        <button class="button primary" type="submit">Validar mensagem <span aria-hidden="true">→</span></button>
+        <p class="form-feedback" id="formFeedback" role="status"></p>
+        <p class="note">Demonstração local: o formulário valida os campos, mas não envia nem armazena dados.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">RF</span><span>RAÍZES <b>DO FUTEBOL</b></span></a><p>Protótipo acadêmico • Tecnologia aplicada à inclusão digital</p><a href="#inicio">Voltar ao topo ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
